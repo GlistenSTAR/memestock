@@ -121,26 +121,7 @@
 		</div>
 
 		<!-- Intro  style="background-color:rgba(38, 82, 131, 0.7 ) -->
-		<section id="intro" class="wrapper style1">
-			<div class="container">
-				<div class="row" align="center" style="width:100%">
-					<div class="alert alert-success" align="center">
-						<span>Use our tracker to find the most discussed stocks from the last 24 hours. This data is updated each hour directly from /r/wallstreetbets (Memed) and mentions on Twitter (Tweeted).</span>
-					</div>
-					<div>
-						<table id="stonks" style="font-size: 1.6em; width: 65%; color:black">
-							<thead>
-								<tr>
-									<th style="font-size: 32px; border-bottom: none;">Stock</th>
-									<th style="font-size: 32px; border-bottom: none;">Memed</th>
-									<th style="font-size: 32px; border-bottom: none;">Tweeted</th>
-								</tr>
-							</thead>
-							<tbody align="center">
-							</tbody>
-						</table>
-					</div>
-		</section>
+		
 
 
 		<!-- Footer -->
