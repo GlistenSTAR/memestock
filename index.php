@@ -109,7 +109,16 @@
 
 	<div id="page-wrapper">
 
-		
+		<!-- Header -->
+		<div class="for-full-back " id="main-sec">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 col-md-offset-2 ">
+						<h1 class="pad-adjust"><img src="./assets/img/logo.png" width="500px" height="400px"></h1>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Intro  style="background-color:rgba(38, 82, 131, 0.7 ) -->
 		<section id="intro" class="wrapper style1">
@@ -135,21 +144,7 @@
 
 
 		<!-- Footer -->
-		<footer class="row" align="center" style="width:100%">
-			<div class="alert alert-warning" align="center">
-				<span><b>DISCLAIMER!</b> This information is not investing advise. We are not financial advisers and you can lose all your money. Do your own research. DO NOT trust /r/wallstreetbets and or Twitter as valid research. Use this at your own risk. Using this data for investing purposes concedes that you are intellectually deficit as no one should be using memes and or tweets for investment advice.
-			</div>
-
-			<div class="alert alert-success1" align="center" style="margin-left:auto; margin-right:auto; font-size:18px">
-				<span><span >Was this useful? Please help improve the website by donating!</span>
-					<br><br><b><span> Donate Bitcoin</span></b>  <br> <b><img src="./assets/img/IMG_6098.png" width="25px" height="25px" style="vertical-align:bottom"> BTC Wallet:</b> <span class="code">19QekhxqKmoKzMTqk5WiKEf5eTwvXZ3Fv6</span></span></span>
-				<br><br>
-				<img src="./assets/img/Qrcode.png" width="250px" height="250px">
-			</div>
-			<div class="for-full-back color-bg-one" id="footer" width="100%">
-				2021 | All Right Reserved <span>| Contact Us: buymemestock@gmail.com</span>
-			</div>
-		</footer>
+		
 		<!-- END FOOTER SECTION -->
 
 		<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
