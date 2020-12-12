@@ -31,7 +31,74 @@
 	</script>
 	<!-- End Google Tag Manager -->
 
-	
+	<script>
+		$(document).ready(function() {
+			$('#stonks').DataTable({
+				"processing": true,
+				"searching": false,
+				"lengthChange": false,
+				"order": [
+					[1, "desc"]
+				],
+				"info": false,
+				"pageLength": 10,
+				"pagingType": "numbers",
+				"ajax": {
+					"url": "https://wsb-pop-index.s3.amazonaws.com/wsbPopIndex.json",
+					"dataSrc": function(data) {
+						var returnData = data.data.slice(0, 20);
+
+						returnData.forEach(callbackFunction);
+
+						function callbackFunction(item, index, arr) {
+							//Initialize data
+							var tweetData = 0;
+							arr[index].push(tweetData);
+						}
+						return returnData;
+					}
+				},
+				"fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+					var countMention = 0;
+					$('td:eq(2)', nRow).html('<i class="fas fa-circle-notch fa-spin"></i>')
+					$.post("ajax_get_count_stock.php", {
+							stock_keyword: aData[0]
+						})
+						.done(function(data) {
+							countMention = parseInt(data);
+							$('td:eq(2)', nRow).html(countMention);
+						});
+				}
+			});
+
+			$.getJSON('https://wsb-pop-index.s3.amazonaws.com/wsbPopIndex.json', function(data) {
+				$("#posts").html("20");
+				$("#comments").html(data.comments);
+				$("#time").text(data.time.substring(0, 19) + ' EST');
+			});
+
+			$('.dataTable').on('click', 'tbody td', function() {
+				//get textContent of the TD
+				console.log('TD cell textContent : ', this.textContent)
+
+				//If ticker symbol, link to Yahoo Finance
+				if (/^[a-zA-Z]+$/.test(this.textContent)) {
+					window.open("https://finance.yahoo.com/quote/" + this.textContent);
+				}
+				//If mention count, link to reddit
+				if (/^[/\d+/g]+$/.test(this.textContent)) {
+					var ticker = $(this).prevAll().text();
+					window.open("https://old.reddit.com/r/wallstreetbets/search/?q=" + ticker + "&include_over_18=on&restrict_sr=on&t=all&sort=new");
+				}
+				//If mention count, Link to twiiter
+				if (/^[/\d+/g]+$/.test(this.textContent)) {
+					var ticker = $(this).prevAll().text();
+					window.open("https://old.twiiter.com/r/wallstreetbets/search/?q=" + ticker + "&include_over_18=on&restrict_sr=on&t=all&sort=new");
+				}
+			})
+
+		});
+	</script>
 
 </head>
 
