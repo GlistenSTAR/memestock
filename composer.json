@@ -1,6 +1,0 @@
-{
-    "require": {
-        "legomolina/simple-orm": "^2.0",
-        "guzzlehttp/guzzle": "^7.2"
-    }
-}
