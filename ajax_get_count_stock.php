@@ -8,3 +8,11 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 require_once('model/TweetStockModel.php');
 
+use ProjectModel\TweetStockModel;
+
+$stockKeyword  = "";
+if (isset($_POST['stock_keyword'])) {
+  $stockKeyword = $_POST['stock_keyword'];
+}
+
+
