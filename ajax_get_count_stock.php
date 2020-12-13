@@ -15,4 +15,9 @@ if (isset($_POST['stock_keyword'])) {
   $stockKeyword = $_POST['stock_keyword'];
 }
 
+$findStock = TweetStockModel::getStock($stockKeyword);
 
+$tweetCount = empty($findStock->tweet_count) ? 0 :  $findStock->tweet_count;
+
+echo json_encode($tweetCount);
+exit();
