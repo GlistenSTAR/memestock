@@ -128,7 +128,6 @@
 								<tr>
 									<th style="font-size: 32px; border-bottom: none;">Stock</th>
 									<th style="font-size: 32px; border-bottom: none;">Memed</th>
-									<th style="font-size: 32px; border-bottom: none;">Tweeted</th>
 								</tr>
 							</thead>
 							<tbody align="center">
