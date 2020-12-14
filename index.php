@@ -143,7 +143,12 @@
 				<span><b>DISCLAIMER!</b> This information is not investing advise. We are not financial advisers and you can lose all your money. Do your own research. DO NOT trust /r/wallstreetbets and or Twitter as valid research. Use this at your own risk. Using this data for investing purposes concedes that you are intellectually deficit as no one should be using memes and or tweets for investment advice.
 			</div>
 
-			
+			<div class="alert alert-success1" align="center" style="margin-left:auto; margin-right:auto; font-size:18px">
+				<span><span >Was this useful? Please help improve the website by donating!</span>
+					<br><br><b><span> Donate Bitcoin</span></b>  <br> <b><img src="./assets/img/IMG_6098.png" width="25px" height="25px" style="vertical-align:bottom"> BTC Wallet:</b> <span class="code">19QekhxqKmoKzMTqk5WiKEf5eTwvXZ3Fv6</span></span></span>
+				<br><br>
+				<img src="./assets/img/Qrcode.png" width="250px" height="250px">
+			</div>
 			<div class="for-full-back color-bg-one" id="footer" width="100%">
 				2021 | All Right Reserved <span>| Contact Us: buymemestock@gmail.com</span>
 			</div>
