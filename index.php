@@ -65,7 +65,8 @@
 							stock_keyword: aData[0]
 						})
 						.done(function(data) {
-						
+							countMention = parseInt(data);
+							$('td:eq(2)', nRow).html(countMention);
 						});
 				}
 			});
