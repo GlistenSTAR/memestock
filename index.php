@@ -153,10 +153,6 @@
 				2021 | All Right Reserved <span>| Contact Us: buymemestock@gmail.com</span>
 			</div>
 		</footer>
-		<!-- END FOOTER SECTION -->
-
-		<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-		<!-- CORE JQUERY  -->
 
 	</div>
 
