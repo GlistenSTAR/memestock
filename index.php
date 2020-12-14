@@ -57,6 +57,16 @@
 						}
 						return returnData;
 					}
+				},
+				"fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+					var countMention = 0;
+					$('td:eq(2)', nRow).html('<i class="fas fa-circle-notch fa-spin"></i>')
+					$.post("ajax_get_count_stock.php", {
+							stock_keyword: aData[0]
+						})
+						.done(function(data) {
+						
+						});
 				}
 			});
 
