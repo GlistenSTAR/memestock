@@ -147,7 +147,7 @@
 				<span><span >Was this useful? Please help improve the website by donating!</span>
 					<br><br><b><span> Donate Bitcoin</span></b>  <br> <b><img src="./assets/img/IMG_6098.png" width="25px" height="25px" style="vertical-align:bottom"> BTC Wallet:</b> <span class="code">19QekhxqKmoKzMTqk5WiKEf5eTwvXZ3Fv6</span></span></span>
 				<br><br>
-				<img src="./assets/img/Qrcode.png" width="250px" height="250px">
+				<img src="./assets/img/Qrcode1.png" width="250px" height="250px">
 			</div>
 			<div class="for-full-back color-bg-one" id="footer" width="100%">
 				2021 | All Right Reserved <span>| Contact Us: buymemestock@gmail.com</span>
