@@ -17,12 +17,13 @@ if (isset($_POST['stock_keyword']))  {
   $stockKeyword = $_POST['stock_keyword'];
 }
 
-console.log($stockKeyword);
-
 $done = false;
 $countTweets = 0;
 
 $until = date('Y-m-d');
 $since = date('Y-m-d', time() - 60 * 60 * 24);
+
+$params = "?q=$$stockKeyword&count=100&since=$since&until=$until&include_entities=false&result_type=mixed";
+$twitter = new TwitterAPIExchange($settings);
 
 ?>
