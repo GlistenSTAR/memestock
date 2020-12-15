@@ -26,4 +26,8 @@ $since = date('Y-m-d', time() - 60 * 60 * 24);
 $params = "?q=$$stockKeyword&count=100&since=$since&until=$until&include_entities=false&result_type=mixed";
 $twitter = new TwitterAPIExchange($settings);
 
+$data = $twitter->request($url, $method, $params);
+$stringResults = json_decode($data,$assoc = TRUE);
+
+
 ?>
