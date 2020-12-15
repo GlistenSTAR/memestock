@@ -13,7 +13,7 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
         
 $method = "GET";
 $stockKeyword  = "";
-if (isset($_POST['stock_keyword']))  {
+if (isset($_get['stock_keyword']))  {
   $stockKeyword = $_POST['stock_keyword'];
 }
 
