@@ -13,8 +13,16 @@ $url = 'https://api.twitter.com/1.1/search/tweets.json';
         
 $method = "GET";
 $stockKeyword  = "";
-if (isset($_get['stock_keyword']))  {
+if (isset($_POST['stock_keyword']))  {
   $stockKeyword = $_POST['stock_keyword'];
 }
+
+console.log($stockKeyword);
+
+$done = false;
+$countTweets = 0;
+
+$until = date('Y-m-d');
+$since = date('Y-m-d', time() - 60 * 60 * 24);
 
 ?>
