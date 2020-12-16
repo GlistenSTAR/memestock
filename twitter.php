@@ -40,5 +40,13 @@ if (!isset($stringResults['search_metadata']['next_results'])) {
   $done = true;
 }
 
+while ($done == false) {
+  // Parse maxId
+  $explode1 = explode('&',$stringResults['search_metadata']['next_results']) ;
+  $explode2 = explode('?max_id=', $explode1[0]);
+ 
+  
+}
 
+echo json_encode($countTweets);exit();
 ?>
