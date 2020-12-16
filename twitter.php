@@ -29,5 +29,11 @@ $twitter = new TwitterAPIExchange($settings);
 $data = $twitter->request($url, $method, $params);
 $stringResults = json_decode($data,$assoc = TRUE);
 
+$countTweets = isset($stringResults['statuses']) ? count($stringResults['statuses']) : 0;
+
+if(array_key_exists("errors", $stringResults)) {
+  echo "Sorry, there was a problem. Twitter returned the following error message:<p><em>".$stringResults[errors][0]["message"]."</em></p>";exit();
+}
+
 
 ?>
