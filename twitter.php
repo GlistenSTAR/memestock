@@ -44,7 +44,15 @@ while ($done == false) {
   // Parse maxId
   $explode1 = explode('&',$stringResults['search_metadata']['next_results']) ;
   $explode2 = explode('?max_id=', $explode1[0]);
- 
+  $maxId = $explode2[1];
+
+  $params = "?q=$$stockKeyword&count=100&max_id=$maxId&since=$since&until=$until&include_entities=false&result_type=mixed";
+  $data = $twitter->request($url, $method, $params);
+  $stringResults = json_decode($data,$assoc = TRUE);
+
+  // Updating count tweets
+  $countTweets = $countTweets + (isset($stringResults['statuses']) ? count($stringResults['statuses']) : 0);
+
   
 }
 
