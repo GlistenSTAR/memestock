@@ -35,7 +35,7 @@ if(array_key_exists("errors", $stringResults)) {
   echo "Sorry, there was a problem. Twitter returned the following error message:<p><em>".$stringResults[errors][0]["message"]."</em></p>";exit();
 }
 
-
+// If all the tweets have been fetched, then we are done
 if (!isset($stringResults['search_metadata']['next_results'])) {
   $done = true;
 }
@@ -53,7 +53,7 @@ while ($done == false) {
   // Updating count tweets
   $countTweets = $countTweets + (isset($stringResults['statuses']) ? count($stringResults['statuses']) : 0);
 
-
+  // If all the tweets have been fetched, then we are done
   if (!isset($stringResults['search_metadata']['next_results'])) {
     $done = true;
   }
