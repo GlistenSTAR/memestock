@@ -53,6 +53,10 @@ while ($done == false) {
   // Updating count tweets
   $countTweets = $countTweets + (isset($stringResults['statuses']) ? count($stringResults['statuses']) : 0);
 
+  // If all the tweets have been fetched, then we are done
+  if (!isset($stringResults['search_metadata']['next_results'])) {
+    $done = true;
+  }
   
 }
 
