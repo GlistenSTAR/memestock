@@ -5,6 +5,15 @@ namespace ProjectModel;
 use \SimpleORM\Model;
 
 
+\SimpleORM\Model::config(array(
+  'name' => 'freelance_memestock',
+  'user' => 'andidepe',
+  'pass' => 'helloworld',
+  'host' => 'localhost',
+  'charset' => 'charset'
+));
+
+
 class TweetStockModel extends Model
 {
   protected static function getTableName()
