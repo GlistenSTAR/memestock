@@ -28,25 +28,6 @@ foreach ($dataSliceBatch1 as $key => $value) {
 
   $empty = empty($findStock->tweet_count);
 
-  try {
-    $bodyData = [
-      'stock_keyword' => $stockKeyword
-    ];
-    $promise = $client->post('http://stock.local/twitter.php', ['form_params' => $bodyData]);
-    $body = $promise->getBody();
-    $dataRes = $body->getContents();
-
-    $dataToSave = array('stock' => $stockKeyword, 'tweet_count' => intval($dataRes));
-    if (!$empty) {
-      $result = TweetStockModel::query()->update($dataToSave)->where('id', '=', $findStock->id)->execute();
-    } else {
-      $result = TweetStockModel::query()->insert($dataToSave)->execute();
-    }
-    echo "Count saved: " . intval($dataRes);
-  } catch (\Exception $e) {
-    if ($e->getMessage()) {
-      continue;
-    }
-  }
+ 
 }
 }
