@@ -7,7 +7,7 @@
 
     100% To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
+
     ========================================================  */
 
 
@@ -128,10 +128,10 @@ p {
     text-align:right;
 }
 #showRightPush {
-    position: fixed; 
+    position: fixed;
     z-index: 9999;
-     right: 5px; 
-     top: 20px; 
+     right: 5px;
+     top: 20px;
      color: #fff;
 }
 /*=======================================
@@ -178,7 +178,7 @@ font-weight: 900;
 .head-main {
     font-size:80px ;
     font-weight:900;
-    
+
 }
 .head-sub-main {
     font-size:40px ;
@@ -192,7 +192,7 @@ font-weight: 900;
 }
 
 .btn-lg, .btn-group-lg > .btn {
-border-radius: 0px; 
+border-radius: 0px;
 
 }
 
@@ -218,9 +218,9 @@ border-radius: 0px;
     line-height: 16px;
     padding: 15px 0;
     position: absolute;
-    text-align: center;  
+    text-align: center;
     width: 100%;
-    
+
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-ms-transition: all 0.3s ease 0s;
@@ -230,7 +230,7 @@ border-radius: 0px;
 .team-member:hover > h3 {
     background: #0d77b6;
     bottom: -55px;
-    color: #FFFFFF;	
+    color: #FFFFFF;
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-ms-transition: all 0.3s ease 0s;
@@ -252,7 +252,7 @@ border-radius: 0px;
     margin: 30px 0px;
     list-style: none;
     text-align: center;
-  
+
     -webkit-transition: all 0.2s ease;
        -moz-transition: all 0.2s ease;
          -o-transition: all 0.2s ease;
@@ -445,6 +445,7 @@ font-size: 30px;
         width: 90%;
         font-size: 18px;
     }
+
     .alert.alert-success1{
         width: 90%;
         font-size: 18px!important;
@@ -471,21 +472,3 @@ font-size: 30px;
         font-size: 12px!important;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
