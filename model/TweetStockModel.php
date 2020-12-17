@@ -12,4 +12,10 @@ class TweetStockModel extends Model
     return 'tweets_stocks';
   }
 
+  //Custom methods for this model
+
+  public static function getStock($stockName)
+  {
+    return self::query()->select('id', 'stock', 'tweet_count')->where('stock', '=', $stockName)->execute();
+  }
 }
