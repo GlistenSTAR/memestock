@@ -28,6 +28,20 @@ foreach ($dataSliceBatch1 as $key => $value) {
 
   $empty = empty($findStock->tweet_count);
 
- 
+  try {
+    $bodyData = [
+      'stock_keyword' => $stockKeyword
+    ];
+    $promise = $client->post('http://stock.local/twitter.php', ['form_params' => $bodyData]);
+    $body = $promise->getBody();
+    $dataRes = $body->getContents();
+
+    
+    echo "Count saved: " . intval($dataRes);
+  } catch (\Exception $e) {
+    if ($e->getMessage()) {
+      continue;
+    }
+  }
 }
 }
