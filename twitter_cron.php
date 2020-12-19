@@ -58,7 +58,17 @@ foreach ($dataSliceBatch2 as $key => $value) {
 
   $empty = empty($findStock->tweet_count);
 
-  
+  try {
+    $bodyData = [
+      'stock_keyword' => $stockKeyword
+    ];
+    
+  } catch (\Exception $e) {
+    if ($e->getMessage()) {
+      echo $e->getMessage();
+      continue;
+    }
+  }
 }
 
 }
