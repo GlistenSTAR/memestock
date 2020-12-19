@@ -49,4 +49,16 @@ foreach ($dataSliceBatch1 as $key => $value) {
     }
   }
 }
+
+foreach ($dataSliceBatch2 as $key => $value) {
+
+  $stockKeyword  = $value[0];
+
+  $findStock = TweetStockModel::getStock($stockKeyword);
+
+  $empty = empty($findStock->tweet_count);
+
+  
+}
+
 }
