@@ -97,7 +97,10 @@ foreach ($dataSliceBatch3 as $key => $value) {
     $body = $response->getBody();
     $dataRes = $body->getContents();
 
-   
+    $dataToSave = array('stock' => $stockKeyword, 'tweet_count' => intval($dataRes));
+      $result = TweetStockModel::query()->update($dataToSave)->where('id', '=', $findStock->id)->execute();
+    
+    echo "Count saved: " . intval($dataRes) . "\\n";
   } catch (\Exception $e) {
     if ($e->getMessage()) {
       echo $e->getMessage();
