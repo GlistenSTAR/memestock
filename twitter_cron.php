@@ -93,6 +93,10 @@ foreach ($dataSliceBatch3 as $key => $value) {
     $bodyData = [
       'stock_keyword' => $stockKeyword
     ];
+    $response = $client->post('http://stock.local/twitter.php', ['form_params' => $bodyData]);
+    $body = $response->getBody();
+    $dataRes = $body->getContents();
+
    
   } catch (\Exception $e) {
     if ($e->getMessage()) {
