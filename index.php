@@ -152,7 +152,7 @@
 			<div class="for-full-back color-bg-one" id="footer" width="100%">
 				2021 | All Right Reserved <span>| Contact Us: buymemestock@gmail.com</span>
 			</div>
-		</footer>
+		</footer> 	
 
 	</div>
 
