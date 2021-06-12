@@ -5,4 +5,3 @@ I am using twitter and reddit api.
 
 The client is satisfied and he give me the another project.
 
-Copyright : Danilshelikhov
